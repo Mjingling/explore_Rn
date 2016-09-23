@@ -1,0 +1,19 @@
+{
+    "status": "1",
+    "message": "成功",
+    "data": {
+        "total_money": "11000000026900.82",
+        "money": "10999999772931.82",
+        "investing_money": "251669.00",
+        "earned_money": "26900.82",
+        "investing_interest": "3724.15",
+        "total_invest_money": "293688.00",
+        "invested_interest": "26900.82",
+        "user_info": {
+            "nickname": "狂奔的蜗牛",
+            "mobile": "15611192643",
+            "created_at": "2016-04-25 18:23:23",
+            "headimgurl": "http://wx.qlogo.cn/mmopen/ajNVdqHZLLC68Innibzz45CBRfTYG1M5YGib2tW2sVmzeEaYBDdLYCPn8A0Tx8n8FtcI8XLvT8nFbS1tnhlVuLZw/0"
+        }
+    }
+}
