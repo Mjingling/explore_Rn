@@ -162,6 +162,15 @@ class OrderList extends Component{
     }
   }
 
+
+_renderFooter(){
+  return (
+    <View>
+        <Text>加载中</Text>
+    </View>
+  );
+}
+
 _rowRender(rowData){
 
   var stateText=function() {
@@ -205,7 +214,6 @@ _rowRender(rowData){
   )
 }
 
-
   render(){
     return (
       <View style={styles.container}>
@@ -226,10 +234,8 @@ _rowRender(rowData){
         renderRow={this._rowRender.bind(this)}
         onEndReached={this.loadMore.bind(this)}
         onEndReachedThreshold={20}
-        renderFooter={this.loadMore.bind(this)}
+        renderFooter={this._renderFooter.bind(this)}
          ></ListView>
-        }
-        }
      </View>
 
 
