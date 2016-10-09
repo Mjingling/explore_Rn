@@ -24,7 +24,7 @@ var w_height=Dimensions.get('window').height;
 const stylesPublic=require('./styles');
 import Loading from './loading';
 const WEBVIEW_REF="webview";
-var icon_back=require('./images/icon-back.png');
+var icon_back=require('../assets/icon-back.png');
 
 class PageHeader extends Component{
   render(){

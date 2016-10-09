@@ -22,27 +22,10 @@ var Dimensions=require('Dimensions');
 var w_width=Dimensions.get('window').width;
 var w_height=Dimensions.get('window').height;
 const stylesPublic=require('./styles');
+import PageHeader from './PageHeader';
 import Loading from './loading';
 const WEBVIEW_REF="webview";
-var icon_back=require('./images/icon-back.png');
-
-class PageHeader extends Component{
-  render(){
-    var leftPart=this.props.leftPart;
-    var rightPart=this.props.rightPart;
-
-    return (
-      <View style={stylesPublic.page_header}>
-          {leftPart}
-          <View style={stylesPublic.page_title_wrapper}>
-             <Text style={stylesPublic.page_title}>{this.props.pageTitle}</Text>
-          </View>
-          {rightPart}
-      </View>
-    )
-  }
-}
-
+var icon_back=require('../assets/icon-back.png');
 
 export default class GoodDetails extends Component{
     constructor(props){

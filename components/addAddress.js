@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
 });
 
 import Dimensions from 'Dimensions';
-import icon_back from './images/icon-back.png';
+import icon_back from '../assets/icon-back.png';
 import  TabView from './tabView';
 import AddressList from './addressList';
 var RCTDeviceEventEmitter = require('RCTDeviceEventEmitter');

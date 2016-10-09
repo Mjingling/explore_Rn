@@ -130,30 +130,13 @@ cell:{
 
 var Dimensions=require('Dimensions');
 
-var icon_back=require('./images/icon-back.png');
-var good_img=require('./images/img.jpg');
-var good_img2=require('./images/img2.jpg');
-var good_img3=require('./images/img3.jpg');
-var good_img4=require('./images/img4.jpg');
+var icon_back=require('../assets/icon-back.png');
+var good_img=require('../assets/img.jpg');
+var good_img2=require('../assets/img2.jpg');
+var good_img3=require('../assets/img3.jpg');
+var good_img4=require('../assets/img4.jpg');
 
-
- class PageHeader extends Component{
-  render(){
-    var leftPart=this.props.leftPart;
-    var rightPart=this.props.rightPart;
-
-    return (
-      <View style={styles.page_header}>
-          {leftPart}
-          <View style={styles.page_title_wrapper}>
-             <Text style={styles.page_title}>{this.props.pageTitle}</Text>
-          </View>
-          {rightPart}
-      </View>
-    )
-  }
-}
-
+import PageHeader from './PageHeader';
 
 class HotPage extends Component{
   constructor(props){

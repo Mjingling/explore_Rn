@@ -12,31 +12,15 @@ import {
 } from 'react-native';
 
 var Dimensions=require('Dimensions');
-const icon_back=require('./images/icon-back.png');
-const icon_delete=require('./images/icon-delete.png');
-const icon_edit=require('./images/icon-edit.png');
-const icon_selectoff=require('./images/icon-selectoff.png');
-const icon_selecton=require('./images/icon-selecton.png');
+const icon_back=require('../assets/icon-back.png');
+const icon_delete=require('../assets/icon-delete.png');
+const icon_edit=require('../assets/icon-edit.png');
+const icon_selectoff=require('../assets/icon-selectoff.png');
+const icon_selecton=require('../assets/icon-selecton.png');
 const styles=require('./styles');
 import AddAddress from './addAddress';
+import PageHeader from './PageHeader';
 var RCTDeviceEventEmitter = require('RCTDeviceEventEmitter');
-
-class PageHeader extends Component{
- render(){
-   var leftPart=this.props.leftPart;
-   var rightPart=this.props.rightPart;
-
-   return (
-     <View style={styles.page_header}>
-         {leftPart}
-         <View style={styles.page_title_wrapper}>
-            <Text style={styles.page_title}>{this.props.pageTitle}</Text>
-         </View>
-         {rightPart}
-     </View>
-   )
- }
-}
 
 export default class AddressList extends Component{
 

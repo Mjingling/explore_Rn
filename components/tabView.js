@@ -16,10 +16,10 @@ import DiyTabBar from './diyTabBar';
 import * as launchImage from 'react-native-launch-image';
 
 const tabIcons=[
-    {on:require('./images/nav-home-on.png'),off:require('./images/nav-home-off.png')},
-    {on:require('./images/nav-circle-on.png'),off:require('./images/nav-circle-off.png')},
-    {on:require('./images/nav-message-on.png'),off:require('./images/nav-message-off.png')},
-    {on:require('./images/nav-mine-on.png'),off:require('./images/nav-mine-off.png')}
+    {on:require('../assets/nav-home-on.png'),off:require('../assets/nav-home-off.png')},
+    {on:require('../assets/nav-circle-on.png'),off:require('../assets/nav-circle-off.png')},
+    {on:require('../assets/nav-message-on.png'),off:require('../assets/nav-message-off.png')},
+    {on:require('../assets/nav-mine-on.png'),off:require('../assets/nav-mine-off.png')}
 ];
 
 export default class TabView extends Component{

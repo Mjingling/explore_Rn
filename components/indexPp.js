@@ -149,18 +149,19 @@ cell:{
 
 var Dimensions=require('Dimensions');
 
-var icon_buy=require('./images/icon-buy.png');
-var icon_center=require('./images/icon-center.png');
+var icon_buy=require('../assets/icon-buy.png');
+var icon_center=require('../assets/icon-center.png');
 
-var bg_hot=require('./images/hot.png');
-var bg_new=require('./images/new.png');
+var bg_hot=require('../assets/hot.png');
+var bg_new=require('../assets/new.png');
 
-var good_img=require('./images/img.jpg');
-var good_img2=require('./images/img2.jpg');
-var good_img3=require('./images/img3.jpg');
-var good_img4=require('./images/img4.jpg');
+var good_img=require('../assets/img.jpg');
+var good_img2=require('../assets/img2.jpg');
+var good_img3=require('../assets/img3.jpg');
+var good_img4=require('../assets/img4.jpg');
 
 import GoodDetails from './goodDetails';
+import PageHeader from './PageHeader';
 var HotPage=require('./hotPage');
 var NewPage=require('./newPage');
 var UserIndex=require('./userIndex');
@@ -383,17 +384,26 @@ export default class IndexPp extends Component{
 
 
   render(){
+
+    var _this=this;
+    var leftPart=(function(){
+      return (
+        <TouchableOpacity></TouchableOpacity>
+      );
+    })();
+    var rightPart=(function(){
+      return (
+        <TouchableOpacity>
+        <Image style={{position:'absolute',right:10,top:0,width:23,marginLeft:10, height: 20, resizeMode: Image.resizeMode.stretch}} source={icon_buy} />
+        </TouchableOpacity>
+      );
+    })();
+
     return (
       <View style={styles.container}>
 
-      <View style={styles.page_header}>
-          <View style={styles.page_title_wrapper}>
-             <Text style={styles.page_title}>优选</Text>
-          </View>
-          <TouchableOpacity>
-            <Image style={{width:22,marginRight:10, height: 20, resizeMode: Image.resizeMode.stretch}} source={icon_buy} />
-          </TouchableOpacity>
-      </View>
+      <PageHeader leftPart={leftPart} rightPart={rightPart} pageTitle="优选" clickFn={this.goBack}>
+      </PageHeader>
 
 
       <View style={{height:Dimensions.get('window').height-110}}>
