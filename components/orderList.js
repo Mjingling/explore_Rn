@@ -73,12 +73,12 @@ const styles = StyleSheet.create({
 
 var Dimensions=require('Dimensions');
 
-var icon_back=require('./images/icon-back.png');
-var icon_address=require('./images/icon-adress.png');
-var icon_order=require('./images/icon-order.png');
-var icon_service=require('./images/icon-service.png');
-var icon_arrow=require('./images/icon-arrow.png');
-var good_img=require('./images/img.jpg');
+var icon_back=require('../assets/icon-back.png');
+var icon_address=require('../assets/icon-adress.png');
+var icon_order=require('../assets/icon-order.png');
+var icon_service=require('../assets/icon-service.png');
+var icon_arrow=require('../assets/icon-arrow.png');
+var good_img=require('../assets/img.jpg');
 
 class OrderList extends Component{
 

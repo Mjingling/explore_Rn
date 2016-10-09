@@ -7,7 +7,7 @@ import {
   StyleSheet
 } from 'react-native';
 
-import loading_img from './images/loading.gif';
+import loading_img from '../assets/loading.gif';
 const Dimensions=require('Dimensions');
 const w_width=Dimensions.get('window').width;
 const w_height=Dimensions.get('window').height;

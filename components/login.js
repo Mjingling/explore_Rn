@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
 });
 
 import Dimensions from 'Dimensions';
-import icon_back from './images/icon-back.png';
+import icon_back from '../assets/icon-back.png';
 import Toast from 'react-native-root-toast';
 
 export default class Login extends Component{

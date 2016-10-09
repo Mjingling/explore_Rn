@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   }
 });
 const stylesPublic=require('./styles');
-const user_avater=require('./images/7-profileimg.png');
+const user_avater=require('../assets/7-profileimg.png');
 import Loading from './loading';
 class PageHeader extends Component{
   render(){

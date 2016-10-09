@@ -136,16 +136,16 @@ const styles = StyleSheet.create({
 });
 
 import Dimensions from 'Dimensions';
-import icon_back from './images/icon-back.png';
-import  icon_address from './images/icon-adress.png';
-import  icon_order from './images/icon-order.png';
-import  icon_service from './images/icon-service.png';
-import  icon_arrow from './images/icon-arrow.png';
-import  good_img from './images/img.jpg';
-import  icon_medal from './images/my_btnicon1.png';
-import icon_friend from './images/my_btnicon2.png';
-import icon_coupon from './images/my_btnicon3.png';
-import icon_challenge from './images/my_btnicon4.png';
+import icon_back from '../assets/icon-back.png';
+import  icon_address from '../assets/icon-adress.png';
+import  icon_order from '../assets/icon-order.png';
+import  icon_service from '../assets/icon-service.png';
+import  icon_arrow from '../assets/icon-arrow.png';
+import  good_img from '../assets/img.jpg';
+import  icon_medal from '../assets/my_btnicon1.png';
+import icon_friend from '../assets/my_btnicon2.png';
+import icon_coupon from '../assets/my_btnicon3.png';
+import icon_challenge from '../assets/my_btnicon4.png';
 
 
 import AddressList from './addressList';
